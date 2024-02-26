@@ -5,8 +5,7 @@
 </head>
 
 <body>
-<h2>home page</h2>
+<h2>page not found!!! 404</h2>
 </body>
 
 </html>
-

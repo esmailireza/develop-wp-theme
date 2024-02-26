@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Title of the document</title>
-</head>
 
 <body>
-The content of the document......
+<h2>index page</h2>
 </body>
-
-</html>

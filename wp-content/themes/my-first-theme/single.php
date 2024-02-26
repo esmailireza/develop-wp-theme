@@ -5,7 +5,7 @@
 </head>
 
 <body>
-<h2>home page</h2>
+<h2>single page</h2>
 </body>
 
 </html>
