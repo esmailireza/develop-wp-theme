@@ -4,4 +4,6 @@
 <?php get_template_part('partials/index/trip-facts','trip-facts'); ?>
 <?php get_template_part('partials/index/course-slider','course-slider'); ?>
 <?php get_template_part('partials/index/post','post'); ?>
+<?php get_template_part('partials/index/post-tech','post-tech'); ?>
+
 <?php get_footer(); ?>
