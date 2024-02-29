@@ -6,7 +6,7 @@
 
                 <div class="col-lg-3 col-md-3">
                     <div class="footer-widget">
-                        <img src="assets/img/logo.png" class="img-footer" alt="" />
+                        <img src="assets/image/logo.png" class="img-footer" alt="" />
                         <div class="footer-add">
                             <p>تهران، خیابان سعادت آباد، خیابان کاج</p>
                             <p>+1 246-345-0695</p>
@@ -225,14 +225,15 @@
 <!-- ============================================================== -->
 <!-- All Jquery -->
 <!-- ============================================================== -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/select2.min.js"></script>
-<script src="assets/js/slick.js"></script>
-<script src="assets/js/jquery.counterup.min.js"></script>
-<script src="assets/js/counterup.min.js"></script>
-<script src="assets/js/custom.js"></script>
+<script src="<?php echo get_template_directory_uri().'/assets/js/jquery.min.js'?>"></script>
+<script src="<?php echo get_template_directory_uri().'/assets/js/popper.min.js'?>"></script>
+<script src="<?php echo get_template_directory_uri().'/assets/js/bootstrap.min.js'?>"></script>
+<script src="<?php echo get_template_directory_uri().'/assets/js/select2.min.js'?>"></script>
+<script src="<?php echo get_template_directory_uri().'/assets/js/slick.js'?>"></script>
+<script src="<?php echo get_template_directory_uri().'/assets/js/jquery.counterup.min.js'?>"></script>
+<script src="<?php echo get_template_directory_uri().'/assets/js/counterup.min.js'?>"></script>
+<script src="<?php echo get_template_directory_uri().'/assets/js/custom.js'?>"></script>
+
 <!-- ============================================================== -->
 <!-- This page plugins -->
 <!-- ============================================================== -->
