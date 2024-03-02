@@ -32,10 +32,10 @@
                             <div class="pic">
                                 <div class="topic_level bg-info text-white">سطح : متوسط</div>
                                 <div class="topic_cat bg-warning text-white">جاوااسکریپت</div>
-                                <a class="pic-main" href="#" style="background-image:url('<?php echo get_template_directory_uri().'/assets/image/course-1.jpg' ?>');"></a>
+                                <a class="pic-main" href="http://localhost/wordpress.exp/wordpress/2024/02/20/hello-world/" style="background-image:url('<?php echo get_template_directory_uri().'/assets/image/course-1.jpg' ?>');"></a>
                             </div>
                             <div class="edu_data singles_items_border_bottom">
-                                <h4 class="title"><a href="single.html">پلاگین نویسی وردپرس</a></h4>
+                                <h4 class="title"><a href="http://localhost/wordpress.exp/wordpress/2024/02/20/hello-world/">پلاگین نویسی وردپرس</a></h4>
                                 <ul class="meta d-flex mt-4">
                                     <li class="d-flex align-items-center"></i>وحید صالحی</li>
                                     <li class="video d-flex align-items-center"><i class="ti-video-clapper"></i>ویدئو</li>

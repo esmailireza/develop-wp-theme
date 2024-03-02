@@ -8,5 +8,4 @@
 <?php get_template_part('partials/index/vip','vip'); ?>
 <?php get_template_part('partials/index/feedback','feedback'); ?>
 <?php get_template_part('partials/index/newsletter','newsletter'); ?>
-
 <?php get_footer(); ?>
