@@ -1,12 +1,22 @@
-<!-- ============================ Footer Start ================================== -->
+<?php
+if(is_front_page()):?>
 <footer class="light-footer">
+    <?php else:?>
+    <footer class="dark-footer skin-dark-footer">
+        <?php endif;?>
+?>
     <div>
         <div class="container">
             <div class="row">
 
                 <div class="col-lg-3 col-md-3">
                     <div class="footer-widget">
-                        <img src="assets/image/logo.png" class="img-footer" alt="" />
+                        <?php
+                        if(is_front_page()):?>
+                            <img src="<?php echo get_template_directory_uri().'/assets/image/logo.png' ?>" class="img-footer" alt="" />
+                        <?php else:?>
+                            <img src="<?php echo get_template_directory_uri().'/assets/image/logo-light.png' ?>" class="img-footer" alt="" />
+                        <?php endif;?>
                         <div class="footer-add">
                             <p>تهران، خیابان سعادت آباد، خیابان کاج</p>
                             <p>+1 246-345-0695</p>
@@ -217,7 +227,7 @@
 <a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
 
 
-</div>
+</footer>
 <!-- ============================================================== -->
 <!-- End Wrapper -->
 <!-- ============================================================== -->
