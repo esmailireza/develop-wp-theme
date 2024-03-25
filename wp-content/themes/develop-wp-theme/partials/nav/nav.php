@@ -64,6 +64,17 @@
                 </ul>
 
             </div>
+        <?php
+        wp_nav_menu(array(
+            'theme_location' =>'top nav',
+            'container' => 'div',
+            'container_class' => 'nav-menus-wrapper',
+            //'menu_class'=> 'nav-menu',
+            'items_wrap' => '<ul id="%1$s" class="nav-menu" >%3$s</ul>',
+            'walker'=> new WP_Bootstrap_NavWalker(),
+            'depth'=>2,
+        ));
+        ?>
         </nav>
     </div>
 </div>
