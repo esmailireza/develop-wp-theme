@@ -7306,7 +7306,7 @@ a.elio_right {
     border-color: #da0b4e;
 }
 .nav-link {
-    font-weight:600;
+    /*font-weight:600;*/
     display: block;
     padding: .8rem 1.5rem;
 }
