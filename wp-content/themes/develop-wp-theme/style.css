@@ -10249,3 +10249,9 @@ a._cr_detail_arrow {
 .mr-auto{
     margin-right: auto
 }
+.menu-item a:hover , .menu-item a:active{
+    background-color: transparent;
+}
+.menu-item .dropdown-toggle:after{
+    content: unset;
+}
