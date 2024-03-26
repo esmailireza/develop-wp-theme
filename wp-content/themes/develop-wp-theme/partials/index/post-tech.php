@@ -18,13 +18,19 @@
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="articles_grid_style">
                     <div class="articles_grid_thumb">
-                        <a href="blog-detail.html"><img src="<?php echo get_template_directory_uri().'/assets/image//b-1.jpg'?>" class="img-fluid" alt="" /></a>
+                        <?php
+                        if (has_post_thumbnail()){
+                            the_post_thumbnail('full',['class' => 'img-fluid','alt'=> get_the_title()]);
+                        }else{
+                            echo '<img src="" class="img-fluid" alt="image" >';
+                        }
+                        ?>
                     </div>
 
                     <div class="articles_grid_caption">
                         <h4><a href="<?php the_permalink(); ?>"><?php echo the_title(); ?></a></h4>
                         <div class="articles_grid_author">
-                            <div class="articles_grid_author_img"><img src="<?php echo get_template_directory_uri().'/assets/image//user-1.jpg'?>" class="img-fluid" alt="" /></div>
+                            <div class="articles_grid_author_img"><img src="<?php echo get_template_directory_uri().'/assets/image/user-1.jpg'?>" class="img-fluid" alt="" /></div>
                             <h4>آدام ویلسون</h4>
                         </div>
                     </div>
