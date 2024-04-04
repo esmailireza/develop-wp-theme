@@ -4,7 +4,7 @@ function custom_post_type_vip() {
 // Set UI labels for Custom Post Type
     $labels = array(
         'name'                => _x( 'نوشته‌های ویژه', 'Post Type General Name', 'twentytwentyone' ),
-        'singular_name'       => _x( 'نوشته vip', 'Post Type Singular Name', 'twentytwentyone' ),
+        'singular_name'       => _x( 'vip posts', 'Post Type Singular Name', 'twentytwentyone' ),
         'menu_name'           => __( 'نوشته های ویژه', 'twentytwentyone' ),
         'parent_item_colon'   => __( 'نوشته والد', 'twentytwentyone' ),
         'all_items'           => __( 'همه نوشته های ویژه', 'twentytwentyone' ),
@@ -27,7 +27,7 @@ function custom_post_type_vip() {
         // Features this CPT supports in Post Editor
         'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
         // You can associate this CPT with a taxonomy or custom taxonomy.
-        'taxonomies'          => array( '' ),
+        'taxonomies'          => array( 'genre' ),
 
         'hierarchical'        => true,
         'public'              => true,
