@@ -5,11 +5,11 @@
             <div class="col-lg-12 col-md-12">
 
                 <div class="breadcrumbs-wrap">
-                    <h1 class="breadcrumb-title">لزوم یادگیری زبان در دنیای امروزی!</h1>
+                    <h1 class="breadcrumb-title"><?php echo the_title() ?></h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">خانه</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">لزوم یادگیری زبان در دنیای امروزی!</li>
+                            <li class="breadcrumb-item"><a href="<?php echo get_home_url() ?>">خانه</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><?php echo the_title() ?></li>
                         </ol>
                     </nav>
                 </div>
