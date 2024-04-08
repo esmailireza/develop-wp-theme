@@ -16,17 +16,23 @@
             <div class="article_top_info">
                 <ul class="article_middle_info">
                     <li><a href="#"><span class="icons"><i class="ti-user"></i></span>توسط <?php echo get_the_author()?></a></li>
-<li><a href="#"><span class="icons"><i class="ti-comment-alt"></i></span>45 نظر ثبت شده</a></li>
+<li><a href="#"><span class="icons"><i class="ti-comment-alt"></i></span><?php echo get_comments_number()?> نظر ثبت شده</a></li>
 </ul>
 </div>
-<?php echo the_content(); ?>
+<?php the_content(); ?>
 <div class="article_bottom_info">
     <div class="post-tags">
         <h4 class="pbm-title">تگ های پربازدید</h4>
         <ul class="list">
-            <li><a href="#">کنکور</a></li>
-            <li><a href="#">موفقیت</a></li>
-            <li><a href="#">تدریس</a></li>
+            <?php
+            $tags = get_the_tags();
+            if ($tags):
+                foreach ($tags as $tag):
+                    $tag_link = get_tag_link($tag->term_id);
+                    ?>
+                    <li><a href="<?php echo $tag_link ?>"><?php echo $tag->name ?></a></li>
+                <?php endforeach; ?>
+            <?php endif; ?>
         </ul>
     </div>
     <div class="post-share">
