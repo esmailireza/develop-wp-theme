@@ -28,11 +28,13 @@ function wl_home_handler()
 
 function wl_setting_handler()
 {
-    if (isset($_POST['btn-submit'])){
-        if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-            echo '<pre>';
-            var_dump($_POST['filter_word']);
-            echo '</pre>';;
+    if (isset($_POST['btn-submit'])) {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            if (!get_option('_wl_word')) {
+                add_option('_wl_word', $_POST['filter_word']);
+            } else {
+                update_option('_wl_word', $_POST['filter_word']);
+            }
         }
     }
     echo '
