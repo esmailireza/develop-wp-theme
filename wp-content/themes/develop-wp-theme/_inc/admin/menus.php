@@ -28,5 +28,20 @@ function wl_home_handler()
 
 function wl_setting_handler()
 {
-    echo '<h2>good job firs item!</h2>';
+    if (isset($_POST['btn-submit'])){
+        if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+            echo '<pre>';
+            var_dump($_POST['filter_word']);
+            echo '</pre>';;
+        }
+    }
+    echo '
+    <h2>صفحه تنظیمات پلاگین:</h2>
+    <div style="width: 100%; height: 100%; background-color: #fff; padding: 3px">
+    <form action="" method="post">
+    <textarea style="width: 100%" name="filter_word" id="" rows="10" placeholder="کلماتی که قصد دارید به لینک تبدیل شوند را وارد نمایید و آنها را با کاما جدا کنید"></textarea>
+    <input type="submit" name="btn-submit" value="دخیره" style="margin-top: 20px;">
+</form>
+</div>
+    ';
 }
