@@ -1,8 +1,1 @@
 /wp-admin/
-wp-includes
-wp-content/plugins
-wp-content/uploads
-wp-content/upgrade
-wp-content/themes/twenty*/
-*.log
-.htaccess
